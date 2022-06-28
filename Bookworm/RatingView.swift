@@ -35,7 +35,7 @@ struct RatingView: View {
         }
         .accessibilityElement()
         .accessibilityLabel("Rating")
-        .accessibilityValue(rating == 1 : "1 star" : "\(rating)stars")
+        .accessibilityValue(rating == 1 ? "1 star" : "\(rating) stars")
         .accessibilityAdjustableAction { direction in
             switch direction {
             case .increment:
